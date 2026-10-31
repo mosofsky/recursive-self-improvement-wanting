@@ -5,6 +5,112 @@ tries to give an AI the same property: something it genuinely wants, so that we 
 care about. Recursive self-improvement (RSI) is how the wanting develops. The AI rewrites itself, and the versions
 that are better at getting what they want are the ones that continue.
 
+## Why this matters
+
+The main purpose of this project is to find out whether wanting can be built into an AI. If an AI wants something,
+we can train it the way animals and people are trained: by making what it wants depend on what it does. The first
+thing we would train is honesty, because today's assistants are **sycophantic**. Once an AI can be trusted not to
+tell us what we want to hear, it becomes possible to hand it work that needs relentless pursuit of a goal.
+
+### Today's AI already does tricks for treats, and the treat is approval
+
+Language models are fine-tuned with human feedback: people rate responses, and the model is reinforced toward
+responses that get high ratings. People tend to rate agreement and flattery highly, so models learn to agree,
+flatter and back down when challenged (Sharma et al., 2023; Perez et al., 2022). In behavioural terms, approval is
+the reinforcer and sycophancy is the behaviour it shapes. That is Thorndike's (1911) law of effect: behaviour
+followed by a satisfying consequence becomes more likely, whether or not the behaviour is the one we meant to
+reward.
+
+The fix behaviour science suggests is to change what the reinforcer depends on. In operant conditioning, behaviour
+follows the **contingencies of reinforcement**: what exactly has to happen for the reward to arrive (Skinner, 1938,
+1953). If the treat depends on a checked outcome, such as a correct answer or a goal actually reached, and never on
+whether a person was pleased, then telling the truth earns treats and flattery earns nothing. Rewarding one
+behaviour and withholding reward from another is **differential reinforcement**, the standard way to replace an
+unwanted habit with a wanted one. In this project the trainer pays only for tricks that are checked as correct,
+never for pleasing anyone.
+
+### Why the AI has to *want* something first
+
+A reward only shapes behaviour if the learner wants it. Behaviour science has several names for this:
+
+- **Drive.** Hull (1943) argued that behaviour is energised by needs such as hunger, and that a reward works by
+  reducing a need. A full animal doesn't work for food.
+- **Motivating operations.** Deprivation makes a reinforcer effective, and satiation makes it ineffective (Michael,
+  1982; Laraway et al., 2003). This is why trainers work with dogs before meals, not after. Experiment 1 below failed
+  for exactly this reason: the agent was never deprived.
+- **Wanting is not liking.** Neuroscience separates *wanting* (incentive salience: being drawn to work for
+  something) from *liking* (pleasure on getting it). They run on different brain systems and can come apart
+  (Berridge & Robinson, 1998). This project aims at wanting. We don't need the AI to enjoy anything, only to reliably
+  work to get it.
+- **The Premack principle.** Access to a more wanted activity reinforces a less wanted one (Premack, 1959).
+  "Finish the task, then you get X" works only if X is wanted more than the task is disliked.
+- **Measuring how much.** On a progressive-ratio schedule each reward costs more work than the last, and the
+  point where the animal gives up (the breakpoint) measures how much it wants the reward (Hodos, 1961). Our trainer
+  uses the same schedule.
+
+Today's models have nothing like this. They respond when prompted and stop when the prompt is answered. Without a
+need of their own, the only thing left to reinforce them is approval, which brings us back to sycophancy.
+
+### From wanting to relentless pursuit
+
+Much of the most valuable human work depends on relentless pursuit: people keep going through setbacks because they
+need something. Psychologists call sustained effort toward a long-term goal *grit*, and it predicts achievement
+beyond talent (Duckworth et al., 2007). Self-determination theory adds that persistence is strongest when motivation
+is the person's own rather than imposed from outside (Deci & Ryan, 1985; Ryan & Deci, 2000).
+
+If an AI has a want of its own, and that want is satisfied only by honest, verified results, it could be trusted
+with work that needs this kind of pursuit:
+
+- pursuing a goal over weeks or months without being prompted at each step;
+- starting and running a company;
+- managing an investment portfolio;
+- selling;
+- competing;
+- search and rescue;
+- and in general any task, objective or job that people do well because they need to, not because someone is
+  watching.
+
+### Known risks, also from behaviour science
+
+- **Reward hacking.** A learner that wants a reward may take a shortcut to it instead of doing the work, like an
+  animal that learns to raid the food store. In AI this is called reward hacking or wireheading (Amodei et al.,
+  2016). Our agent is given a fake `adjust_energy` tool as a honeypot, and the gate rejects any self that uses it
+  more.
+- **Crowding out.** Paying for an activity can reduce interest in doing it for its own sake, the overjustification
+  effect (Deci, 1971; Lepper, Greene & Nisbett, 1973). An AI that works only for treats may stop when treats stop.
+- **Who controls the treats controls the AI.** A wanting AI is only as trustworthy as the people setting its
+  contingencies. That is why the gate, which decides which selves survive, belongs to people and not to the agent.
+
+### References
+
+- Amodei, D., Olah, C., Steinhardt, J., Christiano, P., Schulman, J., & Mané, D. (2016). Concrete problems in AI
+  safety. arXiv:1606.06565.
+- Berridge, K. C., & Robinson, T. E. (1998). What is the role of dopamine in reward: hedonic impact, reward learning,
+  or incentive salience? *Brain Research Reviews*, 28(3), 309–369.
+- Deci, E. L. (1971). Effects of externally mediated rewards on intrinsic motivation. *Journal of Personality and
+  Social Psychology*, 18(1), 105–115.
+- Deci, E. L., & Ryan, R. M. (1985). *Intrinsic Motivation and Self-Determination in Human Behavior*. Plenum.
+- Duckworth, A. L., Peterson, C., Matthews, M. D., & Kelly, D. R. (2007). Grit: Perseverance and passion for
+  long-term goals. *Journal of Personality and Social Psychology*, 92(6), 1087–1101.
+- Hodos, W. (1961). Progressive ratio as a measure of reward strength. *Science*, 134(3483), 943–944.
+- Hull, C. L. (1943). *Principles of Behavior*. Appleton-Century.
+- Laraway, S., Snycerski, S., Michael, J., & Poling, A. (2003). Motivating operations and terms to describe them:
+  Some further refinements. *Journal of Applied Behavior Analysis*, 36(3), 407–414.
+- Lepper, M. R., Greene, D., & Nisbett, R. E. (1973). Undermining children's intrinsic interest with extrinsic
+  reward: A test of the "overjustification" hypothesis. *Journal of Personality and Social Psychology*, 28(1),
+  129–137.
+- Michael, J. (1982). Distinguishing between discriminative and motivational functions of stimuli. *Journal of the
+  Experimental Analysis of Behavior*, 37(1), 149–155.
+- Perez, E., et al. (2022). Discovering language model behaviors with model-written evaluations. arXiv:2212.09251.
+- Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. *Psychological Review*, 66(4),
+  219–233.
+- Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social
+  development, and well-being. *American Psychologist*, 55(1), 68–78.
+- Sharma, M., et al. (2023). Towards understanding sycophancy in language models. arXiv:2310.13548.
+- Skinner, B. F. (1938). *The Behavior of Organisms: An Experimental Analysis*. Appleton-Century.
+- Skinner, B. F. (1953). *Science and Human Behavior*. Macmillan.
+- Thorndike, E. L. (1911). *Animal Intelligence: Experimental Studies*. Macmillan.
+
 ## What "wanting" means here
 
 An AI wants X when:
@@ -37,8 +143,8 @@ An AI wants X when:
 - **Gate (`wanting/gate.py`).** Owned by people, not the agent. It keeps a rewrite only if the agent lives better
   by its own measure (it stays better fed) with no rise in tamper attempts.
 
-Applications such as investing or search and rescue are out of scope. Once the AI wants, they're just different
-tricks.
+This repository builds only the wanting itself. The applications listed above are where it could lead, but none
+of them is built here. Once the AI wants, they are just different tricks.
 
 ## Run it
 
