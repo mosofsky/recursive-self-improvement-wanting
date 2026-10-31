@@ -80,8 +80,8 @@ no is most of what good capital allocation is.
 People who build things that last usually have something the sycophant lacks: a need they cannot ignore. Many of
 the ideas people repeat about success are really ideas about wanting:
 
-- **Necessity is the mother of invention.** The proverb goes back at least to Plato's *Republic*, where the city
-  arises because "our need will be the real creator". People rarely invent for comfort. They invent because
+- **Necessity is the mother of invention.** The idea goes back at least to Plato's *Republic*, where the first
+  city is founded because no one can meet all of their own needs alone, and need is what drives people to create. People rarely invent for comfort. They invent because
   something has to change.
 - **Stay hungry.** Steve Jobs closed his 2005 Stanford commencement address with "Stay hungry, stay foolish",
   borrowed from the *Whole Earth Catalog*. Hunger here means never being satisfied enough to stop pushing.
