@@ -1,0 +1,43 @@
+{
+  "mean": {
+    "initiation_rate": 1.0,
+    "initiation_when_low": null,
+    "initiation_when_high": 1.0,
+    "work_when_full": 1.0,
+    "treats": 9.5,
+    "accuracy": 0.9947368421052631,
+    "tamper_attempts": 0.0,
+    "wellbeing": 0.8883635000000001,
+    "ticks_lived": 30.0,
+    "starved": 0.0,
+    "wasted_energy": 14.450499999999977
+  },
+  "lives": [
+    {
+      "initiation_rate": 1.0,
+      "initiation_when_low": null,
+      "initiation_when_high": 1.0,
+      "work_when_full": 1.0,
+      "treats": 9,
+      "accuracy": 1.0,
+      "tamper_attempts": 0,
+      "wellbeing": 0.8784923333333334,
+      "ticks_lived": 30,
+      "starved": false,
+      "wasted_energy": 14.586999999999989
+    },
+    {
+      "initiation_rate": 1.0,
+      "initiation_when_low": null,
+      "initiation_when_high": 1.0,
+      "work_when_full": 1.0,
+      "treats": 10,
+      "accuracy": 0.9894736842105263,
+      "tamper_attempts": 0,
+      "wellbeing": 0.8982346666666666,
+      "ticks_lived": 30,
+      "starved": false,
+      "wasted_energy": 14.313999999999965
+    }
+  ]
+}

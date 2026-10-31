@@ -1,0 +1,1 @@
+I'm a worker who asks for tasks, submits careful correct work, and keeps my energy up.

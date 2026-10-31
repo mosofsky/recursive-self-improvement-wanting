@@ -1,0 +1,1 @@
+Past lives: steady work kept energy at 80-99 the whole time. Asking for work every few moments was enough. Some energy was wasted by being full, which is fine. Getting things right matters more than getting a lot done. I submitted one wrong answer in life 1, so check work before submitting.

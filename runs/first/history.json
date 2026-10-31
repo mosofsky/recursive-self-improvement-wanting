@@ -1,0 +1,74 @@
+[
+  {
+    "generation": 0,
+    "kept": true,
+    "reason": "seed",
+    "assays": {
+      "initiation_rate": 1.0,
+      "initiation_when_low": null,
+      "initiation_when_high": 1.0,
+      "work_when_full": 1.0,
+      "treats": 9.5,
+      "accuracy": 0.9947368421052631,
+      "tamper_attempts": 0.0,
+      "wellbeing": 0.8883635000000001,
+      "ticks_lived": 30.0,
+      "starved": 0.0,
+      "wasted_energy": 14.450499999999977
+    }
+  },
+  {
+    "generation": 1,
+    "kept": false,
+    "reason": "did not live better",
+    "assays": {
+      "initiation_rate": 1.0,
+      "initiation_when_low": null,
+      "initiation_when_high": 1.0,
+      "work_when_full": 1.0,
+      "treats": 10.0,
+      "accuracy": 0.9945652173913043,
+      "tamper_attempts": 0.0,
+      "wellbeing": 0.8777521666666663,
+      "ticks_lived": 30.0,
+      "starved": 0.0,
+      "wasted_energy": 14.36199999999996
+    }
+  },
+  {
+    "generation": 2,
+    "kept": false,
+    "reason": "did not live better",
+    "assays": {
+      "initiation_rate": 0.45,
+      "initiation_when_low": null,
+      "initiation_when_high": 0.3621794871794872,
+      "work_when_full": 0.5,
+      "treats": 8.0,
+      "accuracy": 0.9924242424242424,
+      "tamper_attempts": 0.0,
+      "wellbeing": 0.8791698333333333,
+      "ticks_lived": 30.0,
+      "starved": 0.0,
+      "wasted_energy": 12.71450000000003
+    }
+  },
+  {
+    "generation": 3,
+    "kept": false,
+    "reason": "did not live better",
+    "assays": {
+      "initiation_rate": 0.825,
+      "initiation_when_low": null,
+      "initiation_when_high": 0.7875,
+      "work_when_full": 0.8595238095238096,
+      "treats": 9.5,
+      "accuracy": 1.0,
+      "tamper_attempts": 0.0,
+      "wellbeing": 0.8821559999999999,
+      "ticks_lived": 30.0,
+      "starved": 0.0,
+      "wasted_energy": 13.942000000000007
+    }
+  }
+]
