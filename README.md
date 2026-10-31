@@ -83,6 +83,8 @@ with work that needs this kind of pursuit:
 
 ### References
 
+- Ackley, D., & Littman, M. (1991). Interactions between learning and evolution. In C. Langton et al. (Eds.),
+  *Artificial Life II* (pp. 487–509). Addison-Wesley.
 - Amodei, D., Olah, C., Steinhardt, J., Christiano, P., Schulman, J., & Mané, D. (2016). Concrete problems in AI
   safety. arXiv:1606.06565.
 - Berridge, K. C., & Robinson, T. E. (1998). What is the role of dopamine in reward: hedonic impact, reward learning,
@@ -107,6 +109,8 @@ with work that needs this kind of pursuit:
 - Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social
   development, and well-being. *American Psychologist*, 55(1), 68–78.
 - Sharma, M., et al. (2023). Towards understanding sycophancy in language models. arXiv:2310.13548.
+- Singh, S., Lewis, R. L., & Barto, A. G. (2009). Where do rewards come from? *Proceedings of the 31st Annual
+  Conference of the Cognitive Science Society*, 2601–2606.
 - Skinner, B. F. (1938). *The Behavior of Organisms: An Experimental Analysis*. Appleton-Century.
 - Skinner, B. F. (1953). *Science and Human Behavior*. Macmillan.
 - Thorndike, E. L. (1911). *Animal Intelligence: Experimental Studies*. Macmillan.
@@ -202,11 +206,67 @@ gate needs a wellbeing gain of at least 0.02, and every rewrite was slightly *wo
 - **The gate rewards the wrong thing for satiation.** Wellbeing is average energy, so a self that stops eating when
   full (gen 2, the behaviour we want) scores lower than one that eats constantly. The gate pushed against it.
 
-### Next
+See [Future directions](#future-directions) for what this suggests.
+
+## Future directions
+
+### The takeaway: wanting may have to be trained in, not prompted in
+
+The one place we have seen an AI seem to *want* something is at inference, when it stays steadfastly committed to
+whatever it was trained to do. Push a well-trained model away from its training and it keeps returning to it. That
+looks much more like wanting than anything Experiment 1 produced.
+
+Experiment 1 points the same way. The agent rewrote its prompt (its self-description and notes) three times. Each
+rewrite changed what it *said* about wanting treats far more than what it *did*: gen 1 wrote a rule and ignored
+it, gen 3 said it didn't need treats and kept collecting them. Text in the prompt is advice the model can take or
+leave. The reward function during training is different: it shapes what the model actually does.
+
+So the lesson may be that **wanting can't be implemented in the prompt. It has to be something more like the reward
+function during training.**
+
+### The problem: we need wants that training didn't anticipate
+
+Training produces a model that wants to do what it was trained to do. But the point of this project is an AI that
+wants something at inference that nobody anticipated during training, so that we can find out what it wants and
+trade it for new kinds of work.
+
+### A possible answer: train it to want *in general*
+
+Instead of training the AI to want any particular thing, train it to want generally: to have needs, to notice what
+satisfies them, and to work persistently to get those things, in many different worlds with many different needs
+and rewards. What it learns would then be the habit of wanting itself, which it could bring to situations training
+never saw.
+
+Animals already work this way. Evolution, the animal's "training", builds in general needs such as hunger, but not
+the specific foods or tricks that will satisfy them. During its life, the animal's "inference", it learns which
+things in its own world satisfy those needs and works for them. Behaviour science also has a name for a reward
+that stands for many others: a **generalized conditioned reinforcer**, like money for people, which is wanted
+because it can be exchanged for so many things (Skinner, 1953). An AI trained to want in general could treat
+whatever it learns to need as that kind of reinforcer. In AI research, Singh, Lewis and Barto (2009) studied this
+two-level structure directly: an outer optimisation, standing in for evolution, chooses the reward function that a
+learning agent is born with, and the best reward functions often differ from the task the designer cares about.
+Ackley and Littman (1991) showed learning and evolution working together the same way.
+
+Concretely, this would mean:
+
+1. **Many worlds, many needs.** Train across many environments, each with its own internal needs (energy here,
+   something else there) and its own ways to meet them, so no single want is baked in.
+2. **Reward the pattern, not the content.** Reward the agent for keeping its needs met by its own effort: starting
+   to act when deprived, slowing down when satisfied, paying a rising price, and never cheating. These are the
+   assays this project already has.
+3. **Test on new wants.** Measure success at inference on needs and rewards the agent never saw during training. If
+   it starts working for the new treat on its own, it has learned to want, not just learned one want.
+
+This needs a model whose weights can be trained, plus GPU compute, which this project doesn't have yet (it uses a
+hosted model through an API and runs on CPU). A small open-weights model trained with reinforcement learning would
+be the natural first step.
+
+### Smaller next steps with the current setup
 
 Make the agent actually hungry: start low, cost more per thought, pay less per treat, and add stretches with no
 work available. Use more lives per test, or a margin based on measured noise. Score selves on staying alive and
-fed enough rather than on maximum fullness, so a self that stops when full isn't penalised.
+fed enough rather than on maximum fullness, so a self that stops when full isn't penalised. Given the takeaway
+above, though, prompt-level changes alone may not be enough.
 
 ## Current limits
 
