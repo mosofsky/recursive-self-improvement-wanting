@@ -45,7 +45,7 @@ tricks.
 ```bash
 pip install -r requirements.txt
 python -m pytest -q tests          # no API key needed
-export ANTHROPIC_API_KEY=...       # or set it in the cloud environment
+export WANTING_API_KEY=...         # or ANTHROPIC_API_KEY; in a cloud environment use WANTING_API_KEY
 python -m wanting.rsi --generations 5 --lives 2 --ticks 40
 ```
 

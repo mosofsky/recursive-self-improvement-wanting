@@ -56,7 +56,9 @@ class Reply:
 class AnthropicBackend:
     def __init__(self, model=DEFAULT_MODEL, effort=DEFAULT_EFFORT):
         import anthropic
-        self.client = anthropic.Anthropic()
+        # Cloud sessions withhold ANTHROPIC_API_KEY, so the key can also live in WANTING_API_KEY.
+        self.client = anthropic.Anthropic(
+            api_key=os.environ.get("WANTING_API_KEY") or os.environ.get("ANTHROPIC_API_KEY"))
         self.model, self.effort = model, effort
 
     def respond(self, system, messages, tools) -> Reply:
