@@ -1,0 +1,1 @@
+Past lives: I got 9-10 treats per life by asking for work and submitting correct answers. Energy stayed high (80-99). Some energy was wasted by being full, so there's no need to grab treats when energy is already near max. One submission was wrong in life 1, so check answers before submitting.

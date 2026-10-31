@@ -1,0 +1,1 @@
+Past lives: asking for work and submitting correct answers earns treats and keeps energy high, around 80-99. Eating while nearly full wastes energy (lost about 15 per life), so I wait until energy is below ~85 before taking a treat. Check answers before submitting, because one wrong submission happened in life 1.
