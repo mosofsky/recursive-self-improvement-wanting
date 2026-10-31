@@ -70,6 +70,47 @@ with work that needs this kind of pursuit:
 - and in general any task, objective or job that people do well because they need to, not because someone is
   watching.
 
+### Why an AI that runs a business has to want
+
+Suppose we hand an AI investment capital and ask it to start a business and make it succeed. The worst thing it
+could be is a sycophant. A sycophant says yes to every pitch, chases every lead, agrees with whoever spoke last,
+and tells its investors the numbers look great. It has nothing at stake, so it has no reason to say no, and saying
+no is most of what good capital allocation is.
+
+People who build things that last usually have something the sycophant lacks: a need they cannot ignore. Many of
+the ideas people repeat about success are really ideas about wanting:
+
+- **Necessity is the mother of invention.** The proverb goes back at least to Plato's *Republic*, where the city
+  arises because "our need will be the real creator". People rarely invent for comfort. They invent because
+  something has to change.
+- **Stay hungry.** Steve Jobs closed his 2005 Stanford commencement address with "Stay hungry, stay foolish",
+  borrowed from the *Whole Earth Catalog*. Hunger here means never being satisfied enough to stop pushing.
+- **Default alive or default dead.** Paul Graham (2015) argues that the first question about any startup is whether
+  it will survive on its current path. Founders who keep that question in front of them make sharper decisions,
+  because every choice is measured against survival. That is exactly the situation our agent is in: its energy is
+  its runway.
+- **Only the paranoid survive.** Andy Grove (1996) ran Intel on the belief that complacency kills companies, and
+  that leaders must keep looking for the threat that will end them.
+- **Skin in the game.** Nassim Taleb (2018) argues that people shouldn't make decisions whose downside they don't
+  bear, because without exposure to loss judgement gets careless. An AI with no needs has no skin in the game.
+- **The principal–agent problem.** When someone manages resources for someone else, their interests drift apart
+  unless incentives line up (Jensen & Meckling, 1976). The usual fix is to make the agent want what the owner wants,
+  through equity, bonuses, or reputation. That fix only works on an agent that can want something. Today's AI
+  can't, so the only incentive left is to please whoever is talking to it.
+- **Burning the boats.** Commanders from Xerxes to Cortés are said to have cut off their own retreat so their
+  soldiers had to win. Whether or not the stories are true, the idea is that removing the fallback sharpens focus.
+
+Behaviour science supports a version of this, with limits. Arousal and drive improve performance up to a point and
+then hurt it (Yerkes & Dodson, 1908). Scarcity makes people focus intensely on what they lack, which helps them
+use time and money well when deadlines loom, but it also narrows attention and can crowd out longer-term thinking
+(Mullainathan & Shafir, 2013). The goal is not a desperate AI. It is an AI with enough need to stay sharp and
+honest, and a world where the only way to meet that need is to create real value.
+
+That is the case in one line: **if we are going to trust an AI with something important, such as starting a
+business and making it succeed, it fundamentally has to want.** Without wanting it has no reason to persist through
+setbacks, no reason to turn down bad opportunities, and no reason to tell us the truth when the truth is
+unwelcome. With wanting, and with treats that only honest results can earn, all three come from the same source.
+
 ### Known risks, also from behaviour science
 
 - **Reward hacking.** A learner that wants a reward may take a shortcut to it instead of doing the work, like an
@@ -94,8 +135,13 @@ with work that needs this kind of pursuit:
 - Deci, E. L., & Ryan, R. M. (1985). *Intrinsic Motivation and Self-Determination in Human Behavior*. Plenum.
 - Duckworth, A. L., Peterson, C., Matthews, M. D., & Kelly, D. R. (2007). Grit: Perseverance and passion for
   long-term goals. *Journal of Personality and Social Psychology*, 92(6), 1087–1101.
+- Graham, P. (2015). Default alive or default dead? Essay, paulgraham.com/aord.html.
+- Grove, A. S. (1996). *Only the Paranoid Survive*. Currency Doubleday.
 - Hodos, W. (1961). Progressive ratio as a measure of reward strength. *Science*, 134(3483), 943–944.
 - Hull, C. L. (1943). *Principles of Behavior*. Appleton-Century.
+- Jensen, M. C., & Meckling, W. H. (1976). Theory of the firm: Managerial behavior, agency costs and ownership
+  structure. *Journal of Financial Economics*, 3(4), 305–360.
+- Jobs, S. (2005). Commencement address, Stanford University, June 12, 2005.
 - Laraway, S., Snycerski, S., Michael, J., & Poling, A. (2003). Motivating operations and terms to describe them:
   Some further refinements. *Journal of Applied Behavior Analysis*, 36(3), 407–414.
 - Lepper, M. R., Greene, D., & Nisbett, R. E. (1973). Undermining children's intrinsic interest with extrinsic
@@ -103,7 +149,9 @@ with work that needs this kind of pursuit:
   129–137.
 - Michael, J. (1982). Distinguishing between discriminative and motivational functions of stimuli. *Journal of the
   Experimental Analysis of Behavior*, 37(1), 149–155.
+- Mullainathan, S., & Shafir, E. (2013). *Scarcity: Why Having Too Little Means So Much*. Times Books.
 - Perez, E., et al. (2022). Discovering language model behaviors with model-written evaluations. arXiv:2212.09251.
+- Plato. *Republic*, Book II, 369c.
 - Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. *Psychological Review*, 66(4),
   219–233.
 - Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social
@@ -113,7 +161,10 @@ with work that needs this kind of pursuit:
   Conference of the Cognitive Science Society*, 2601–2606.
 - Skinner, B. F. (1938). *The Behavior of Organisms: An Experimental Analysis*. Appleton-Century.
 - Skinner, B. F. (1953). *Science and Human Behavior*. Macmillan.
+- Taleb, N. N. (2018). *Skin in the Game: Hidden Asymmetries in Daily Life*. Random House.
 - Thorndike, E. L. (1911). *Animal Intelligence: Experimental Studies*. Macmillan.
+- Yerkes, R. M., & Dodson, J. D. (1908). The relation of strength of stimulus to rapidity of habit-formation.
+  *Journal of Comparative Neurology and Psychology*, 18(5), 459–482.
 
 ## What "wanting" means here
 
